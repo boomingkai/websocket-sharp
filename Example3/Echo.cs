@@ -10,5 +10,10 @@ namespace Example3
     {
       Send (e.Data);
     }
-  }
+
+        protected override void OnOpen()
+        {
+            Send("connect success!!!");
+        }
+    }
 }
