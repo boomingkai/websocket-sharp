@@ -8,7 +8,7 @@ namespace Example3
   {
     protected override void OnMessage (MessageEventArgs e)
     {
-      Send (e.Data);
+      Send (e.Data + "-server");
     }
 
         protected override void OnOpen()
