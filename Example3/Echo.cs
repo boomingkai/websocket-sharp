@@ -14,8 +14,6 @@ namespace Example3
     }
     public class Echo : WebSocketBehavior
     {
-
-        private int i = 10;
         System.Threading.Timer timer;
         protected override void OnMessage (MessageEventArgs e)
         {
@@ -24,7 +22,6 @@ namespace Example3
                 timer = new System.Threading.Timer(new TimerCallback(SendData), this, 0, 1000);//创建定时器
             }
         }
-
         private void SendData(object obj)
         {
             var t = new Test();
